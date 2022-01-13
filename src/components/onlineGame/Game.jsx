@@ -20,7 +20,7 @@ import socket from '../../socketExport/exportSocket'
 // const ENDPOINT = 'https://taki-socket.netlify.app'
 // const ENDPOINT = 'http://localhost:5000'
 // const URL = 'https://taki-server.netlify.app'
-const URL = ' http://localhost:4001'
+const URL = ' http://taki-client-ameer.herokuapp.com'
 
 const Game = () => {
     const numberOfPlayers = 2;

@@ -1,7 +1,7 @@
 const axios = require("axios");
 require("dotenv").config();
 //Temp
-const URL = "http://localhost:4001";
+const URL = "http://taki-client-ameer.herokuapp.com";
 export const userAlreadyLoggedIn = async ({ username, password }) => {
   try {
     const res = await axios.post(`${URL}/getUser`, { username });
