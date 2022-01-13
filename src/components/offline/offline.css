@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.offline-game{
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background: url('../../resources/cards/table.png')no-repeat center center/cover; */
+    background: radial-gradient(#459CBB,#36697E);
+}
+ .offline-game .Card,.offline-game .pileCard{
+    width: 100%;
+    height: 100%;
+    
+
+} 
+/* .offline-game .animate-card{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+     animation: toTable 1s 1s .5 infinite ease-in-out;
+     height:50px
+     ;
+     width:50px
+     ;
+    animation: rotateCard 1s 1s .5 infinite ease-in-out;
+    
+}
+@keyframes toTable {
+    to{
+        top: 50%;
+        left: 45%;
+    }
+    
+}
+@keyframes rotateCard{
+
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+transform: rotate(180deg);
+    }
+    75%{
+transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+.offline-game .Card{
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.offline-game .Card:hover{
+    transform: scale(1.1);
+    transform: translateY(-5px);
+}
+.offline-game .middleInfo .pileCard{
+    width: 20.5%;
+    height: 20.5%;
+    border-radius: 5px;
+}
+ .offline-game .playerDeck,
+  .offline-game .bot1Deck,
+   .offline-game .bot2Deck{
+    width: 180px;
+    max-width: 200px;
+    display: grid;
+    grid-gap: .25rem;
+}
+
+.offline-game .bot2Deck{
+
+    top: 30%;
+    left: 5%;
+}
+/* .offline-game .bot1Deck{
+    top: 30%;
+    right: 5%;
+} */
+ .offline-game .middleInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin:1rem
+
+} 
+.offline-game .middleInfo .draw-button{
+    padding: 1rem .5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    width: 30%;
+    min-width: 75px;
+    text-shadow: 2px 2px 1px #0066a2, -2px 2px 1px #0066a2, 2px -2px 1px #0066a2, -2px -2px 1px #0066a2, 0px 2px 1px #0066a2, 0px -2px 1px #0066a2, 0px 4px 1px #004a87, 2px 4px 1px #004a87, -2px 4px 1px  #004a87;
+    background: repeating-linear-gradient( 45deg, #3ebbf7, #3ebbf7 5px, #45b1f4 5px, #45b1f4 10px);
+  border-bottom: 3px solid rgba(16, 91, 146, 0.5);
+  border-top: 3px solid rgba(255,255,255,.3);
+  color: #fff !important;
+  box-shadow: 0 6px 0 #266b91, 0 8px 1px 1px rgba(0,0,0,.3), 0 10px 0 5px #12517d, 0 12px 0 5px #1a6b9a, 0 15px 0 5px #0c405e, 0 15px 1px 6px rgba(0,0,0,.3);
+    border: none;
+    color: green;
+   
+    cursor: pointer;
+}
+.offline-game .middleInfo .draw-button:hover{
+    background: transparent;
+    outline: 1px solid rgb(199, 186, 186);
+    color: white;
+}
+
+.music{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    right:7.5%;
+    top:7.5%;
+}
+.winner-player{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.colors {
+    width: 300px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+}
+.colors img{
+   margin: 0 .5rem;
+   cursor: pointer;
+}
+.colors img:hover{
+    transform: scale(1.1);
+}
+.red_color{
+    background: red;
+}
+.yellow_color{
+    background: yellow;
+}
+.green_color{
+    background: green;
+}.blue_color{
+    background: blue;
+}
+
+.offline-game .container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: .5rem;
+    flex-direction: column;
+}
+.offline-game .container .first-half{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offline-game .container .second-half{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playerTurn{
+    color: white;
+text-align: center;   
+ width: 100%;
+ display: block;
+}
